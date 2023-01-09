@@ -1,18 +1,18 @@
-# Scrape Webpage with Scrapy
+# Scrape Webpage with Python
 Author: Yang Xu (yxu6@nd.edu)
 
 ## Overview
 
-This is the introduction of the Workshop offered by Lucy Family Institute-Center for Social Science Research.
+This is the introduction of the Workshop offered by Lucy Family Institute - Center for Social Science Research.
 
-Web scraping is the process of fetching webpage content and extracting the desired data. It can be used in many fields, such as data science, online content monitoring.
+Scrapy is a fast high-level web crawling and web scraping Python framework, used to crawl websites and extract structured data from their pages. It can be used for a wide range of purposes, from data mining to monitoring and automated testing.
 
-The workshop introduces the knowledge related to the web scraping, involves hands-on project to scrape, parse and extract desired data from webpage using Scrapy.
+The workshop provides an introduction to web scraping, and involves a hands-on project to scrape, parse and extract desired data from a webpage using Scrapy.
 
 Participants will learn:
 1. HTTP protocol basics involved in a web scraping instance
-2. Set up code to send request to remote server
-3. Parse response with html element marker
+2. Set up Scrapy to send request to remote server
+3. Parse HTML response
 4. Using regex to locate desired data and extract
 
 ## Prior Knowledge
@@ -23,7 +23,7 @@ The workshop assumes the working knowledge of Python. There are links to some us
 
 Make sure the Python3 (recommended version 3.9 or later) and IDE (recommended Jupyter) are installed.
 
-You can refer to the [Python_IDE_Setup](https://github.com/Lucy-Family-Institute/CSSR-Workshop-Twitter/blob/master/Python_IDE_Setup.md) to install the required apps.
+You can refer to the [Python_IDE_Setup](https://github.com/Lucy-Family-Institute/CSSR-Workshop-Scrapy/blob/master/Python_IDE_Setup.md) to install the required apps.
 
 The packages this workshop will use are:
 1. scrapy 
@@ -33,11 +33,12 @@ You can install them through pip3 or conda. It will be demonstrated at the begin
 
 ## IMPORTANT INFORMATION
 
-Web scraping is, in general, legal. 
-The twitter developer account is a must-have for this workshop. To apply for a developer account, you need to have a regular twitter account. It is assumed you already have one. You will need to receive approval of a developer account before any proceedings to work on codes and twitter data analysis.
+Web scraping is, in general, legal, given the scraping instance follows the **Terms of Service** of the targeted website, as well as the data is public. A good practice is to check the robots.txt of the website to be scraped.
+
+Popular social media website such as Twitter, Facebook, Instagram have their own policy, some may offer API for direct data exchange.
 
 ## Workshop Plan and Date
 
-The workshop is planned with 1.5 hours session on Feb.7. Including a brief introduction, live demos. The instructor will answer questions and help with the bugs during live-coding.
+The workshop is planned with an 1.5 hours session on Feb.6. Including a brief introduction, live demos. The instructor will answer questions and help with the debug during live-coding.
 
-3:30-5pm Feb.7 CDS 246
+3:30-5pm Feb.9 CDS 246
