@@ -17,7 +17,7 @@ Participants will learn:
 
 ## Prior Knowledge
 
-The workshop assumes the working knowledge of Python. There are links to some useful Python basics below. The workshop will **NOT** go through Python introduction.
+The workshop assumes the working knowledge of Python. It is recommended to have at least 50 hours experience in programming. There are links to some useful Python basics below. The workshop will **NOT** go through Python introduction.
 
 ## Software Details
 
@@ -27,7 +27,7 @@ You can refer to the [Python_IDE_Setup](https://github.com/Lucy-Family-Institute
 
 The packages this workshop will use are:
 1. scrapy 
-2. pandas
+2. BeautifulSoup
 
 You can install them through pip3 or conda. It will be demonstrated at the beginning of the workshop.
 
@@ -37,8 +37,17 @@ Web scraping is, in general, legal, given the scraping instance follows the **Te
 
 Popular social media website such as Twitter, Facebook, Instagram have their own policy, some may offer API for direct data exchange.
 
+In addition, websites listed below are out of the scope of this workshop:
+
+1. Websites with paywall, such as: WSJ, New York Times, etc.
+2. Websites deployed with CAPTCHA.
+3. Data that requires credentials for access.
+4. Google suite, such as Google Search, Google Map, etc.
+5. Other websites that prohibits automated HTTP requests.
+6. Data rendered by javascript
+
 ## Workshop Plan and Date
 
-The workshop is planned with an 1.5 hours session on Feb.6. Including a brief introduction, live demos. The instructor will answer questions and help with the debug during live-coding.
+The workshop is planned with an 1.5 hours session. Including a brief introduction, live demos. The instructor will answer questions and help with the debug during live-coding.
 
 3:30-5pm Feb.9 CDS 246
