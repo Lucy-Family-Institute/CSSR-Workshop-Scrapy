@@ -28,8 +28,8 @@
 
 ## Packages Installation and Import
 > 1. [Scrapy](https://docs.scrapy.org/en/latest/): the core package for this workshop 
-> 2. [Pandas](https://pandas.pydata.org/docs/getting_started/overview.html): the package for data parsing
-> 3. [BeautifulSoup](https://pandas.pydata.org/docs/getting_started/overview.html): the package for response parsing
+> 2. [Pandas](https://pandas.pydata.org/docs/getting_started/overview.html): the package for data parsing and processing
+> 3. [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/): the package for response parsing
 
 ## Why Scrapy?
 > 1. open source and collaborative framework
@@ -37,9 +37,18 @@
 
 ## HTTP Response
 > #### What is HTTP Response?
-> #### How to use the response for web scraping?
+> 1. A HTTP response is made by a server to a client.
+> 2. Contains three parts:
+>    - Status Line
+>    - HTTP Headers
+>    - Body
 
 ## Webscraping Preparation
+
+### Webscraping Steps
+ 1. 
+
+
 > 1. Create Scrapy Project and Check the Project Directory
 > ```azure
 > scrapy startproject workshop 

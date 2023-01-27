@@ -11,6 +11,10 @@ Link to Anaconda download: https://www.anaconda.com/products/individual
 The workshop will also require some packages that can be installed through pip3 or conda:
 
 1. tweepy
-    - ```pip install tweepy``` or ```conda install -c conda-forge tweepy```
-    - ```pip show tweepy```
+    - ```pip install scrapy``` or ```conda install -c conda-forge scrapy```
+    - ```pip show scrapy```
 2. pandas
+3. BeautifulSoup4
+   - ```conda install -c conda-forge beautifulsoup4```
+   - ```pip show beautifusoup4```
+
