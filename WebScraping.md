@@ -46,9 +46,6 @@
 ## Webscraping Preparation
 
 ### Webscraping Steps
- 1. 
-
-
 > 1. Create Scrapy Project and Check the Project Directory
 > ```azure
 > scrapy startproject workshop 
