@@ -67,10 +67,10 @@
 > 6. Inspect HTML elements
 > 7. Use XPath or CSS selector to locate the desired data and extract
 > 
->   Tips:
->      1. Figure out the structure of the webpage, pay attention to the **nest** and **parallel** nodes
->      2. Choose the attribute for selector
->      3. Write [XPath/CSS](https://doc.scrapy.org/en/latest/topics/selectors.html#extensions-to-css-selectors) selector to locate and extract
+>    - Tips:
+>        1. Figure out the structure of the webpage, pay attention to the **nest** and **parallel** nodes
+>        2. Choose the attribute for selector
+>        3. Write [XPath/CSS](https://doc.scrapy.org/en/latest/topics/selectors.html#extensions-to-css-selectors) selector to locate and extract
 > 
 > 8. Test your XPath/CSS selector result 
 
@@ -83,10 +83,10 @@
  
 ## One Step Further: Write a Webcrawler
 > 1. Difference between web scrape and crawl 
->   1. Crawler extract links within each page and follow through
->   2. Crawler sends concurrent HTTP requests and process multiple response simultaneously
->   3. Crawler processes extracted data from different pages and export to database
->   4. Crawler needs to be configured to not overload server
+>    1. Crawler extract links within each page and follow through
+>    2. Crawler sends concurrent HTTP requests and process multiple response simultaneously
+>    3. Crawler processes extracted data from different pages and export to database
+>    4. Crawler needs to be configured to not overload server
 > 2. Introduce **Rule**: extract links to follow through, or to parse
 > 3. Introduce **Item** and **ItemPipeline**: processing extracted data and export
 > 4. Create Items and ItemPipeline in the *items.py* and *pipeline.py*
