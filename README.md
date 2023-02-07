@@ -26,8 +26,9 @@ Make sure the Python3 (recommended version 3.9 or later) and IDE (recommended Ju
 You can refer to the [Python_IDE_Setup](https://github.com/Lucy-Family-Institute/CSSR-Workshop-Scrapy/blob/master/Python_IDE_Setup.md) to install the required apps.
 
 The packages this workshop will use are:
-1. scrapy 
-2. BeautifulSoup
+1. Scrapy 
+2. Pandas
+3. BeautifulSoup
 
 You can install them through pip3 or conda. It will be demonstrated at the beginning of the workshop.
 

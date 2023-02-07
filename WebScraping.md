@@ -77,7 +77,12 @@
 >    1. Write *start_requests*
 >    2. Write *parse*
 > 3. Export data  
- 
+> 4. Run spider
+> ```
+> scrapy crawl reuters
+> ```
+
+
 ## One Step Further: Write a Webcrawler
 > 1. Difference between web scrape and crawl 
 >    1. Crawler extracts links within each page and follow through
@@ -90,10 +95,6 @@
 >    3. Create Items and ItemPipeline in the *items.py* and *pipeline.py*
 >    4. Register pipeline in the *settings.py*
 >    5. Configure the crawler in the *settings.py*
-
-
-
-> * [Full Query Parameters]()
 
 
 ### End
