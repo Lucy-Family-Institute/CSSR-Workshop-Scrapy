@@ -14,7 +14,7 @@
 > 
 > ![Request-Response](source/HTTP_Request_Response.png)
 >  ### How is HTTP related to Webscraping?
-> Webscraping is following the HTTP protocol by sending automated requests to remote server, instead of parsing and displaying the response in a browser (e.g. Chrome, Safari), the script parse the response and extract the desired information.
+> Webscraping follows the HTTP protocol by sending automated requests to remote server. Instead of parsing and displaying the response in a browser (e.g. Chrome, Safari), the script parses the response and extracts the desired information.
 > 
 > ### Frequent HTTP Status Code:
 > ![404](source/google404.webp)
@@ -32,11 +32,11 @@
 > 3. [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/): the package for response parsing
 
 ## Why Scrapy?
-> 1. open source and collaborative framework
-> 2. fast and powerful
+> 1. Open source and collaborative framework
+> 2. Fast and powerful
 
 ## HTTP Response
-> #### What is HTTP Response?
+> #### What is a HTTP Response?
 > 1. A HTTP response is made by a server to a client.
 > 2. Contains three parts:
 >    - Status Line
@@ -73,22 +73,23 @@
 
 ## Write the First Spider
 > 1. Create new python file *reuters.py* under folder **spiders**
-> 2. Two-step
->    1. write *start_requests*
->    2. write *parse*
+> 2. Two steps
+>    1. Write *start_requests*
+>    2. Write *parse*
 > 3. Export data  
  
 ## One Step Further: Write a Webcrawler
 > 1. Difference between web scrape and crawl 
->    1. Crawler extract links within each page and follow through
->    2. Crawler sends concurrent HTTP requests and process multiple response simultaneously
->    3. Crawler processes extracted data from different pages and export to database
+>    1. Crawler extracts links within each page and follow through
+>    2. Crawler sends concurrent HTTP requests and processes multiple response simultaneously
+>    3. Crawler processes extracted data from different pages and exports to a database
 >    4. Crawler needs to be configured to not overload server
-> 2. Introduce **Rule**: extract links to follow through, or to parse
-> 3. Introduce **Item** and **ItemPipeline**: processing extracted data and export
-> 4. Create Items and ItemPipeline in the *items.py* and *pipeline.py*
-> 5. Register pipeline in the *settings.py*
-> 6. Configure the crawler in the *settings.py*
+> 2. Writing a crawler follows these steps:
+>    1. Introduce **Rule**: extract links to follow through, or to parse
+>    2. Introduce **Item** and **ItemPipeline**: processing extracted data and export
+>    3. Create Items and ItemPipeline in the *items.py* and *pipeline.py*
+>    4. Register pipeline in the *settings.py*
+>    5. Configure the crawler in the *settings.py*
 
 
 
