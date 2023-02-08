@@ -26,6 +26,14 @@
      >     - Response Status Code starting with 5 means the server end (Website Server) has error(s).
      >     - Nothing you can do about it, wait and retry
 
+## HTTP Response
+> #### What is a HTTP Response?
+> 1. A HTTP response is made by a server to a client.
+> 2. Contains three parts:
+>    - Status Line
+>    - HTTP Headers
+>    - Body
+
 ## Packages Installation and Import
 > 1. [Scrapy](https://docs.scrapy.org/en/latest/): the core package for this workshop 
 > 2. [Pandas](https://pandas.pydata.org/docs/getting_started/overview.html): the package for data parsing and processing
@@ -34,14 +42,6 @@
 ## Why Scrapy?
 > 1. Open source and collaborative framework
 > 2. Fast and powerful
-
-## HTTP Response
-> #### What is a HTTP Response?
-> 1. A HTTP response is made by a server to a client.
-> 2. Contains three parts:
->    - Status Line
->    - HTTP Headers
->    - Body
 
 ## Webscraping Preparation
 
