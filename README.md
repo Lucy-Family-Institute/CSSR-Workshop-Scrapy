@@ -10,10 +10,10 @@ Scrapy is a fast high-level web crawling and web scraping Python framework, used
 The workshop provides an introduction to web scraping, and involves a hands-on project to scrape, parse and extract desired data from a webpage using Scrapy.
 
 Participants will learn:
-1. HTTP protocol basics involved in a web scraping instance
-2. Set up Scrapy to send request to remote server
-3. Parse HTML response
-4. Using regex to locate desired data and extract
+1. Grasp web scraping fundamentals.
+2. Master the art of HTML parsing and extracting data.
+3. Use regex for precise data retrieval.
+4. Set up Scrapy for efficient data extraction.
 
 ## Prior Knowledge
 
@@ -51,4 +51,4 @@ In addition, websites listed below are out of the scope of this workshop:
 
 The workshop is planned with an 1.5 hours session. Including a brief introduction, live demos. The instructor will answer questions and help with the debug during live-coding.
 
-3:30-5pm Feb.9 CDS 246
+3:30-5pm Oct.3 CDS 246 (Hesburgh Library)
