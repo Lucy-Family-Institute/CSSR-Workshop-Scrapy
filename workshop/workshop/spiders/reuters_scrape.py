@@ -9,7 +9,7 @@ class Reuters(Spider):
 
     def start_requests(self):
 
-        url_list = ['https://www.reuters.com/world/europe/zelenskiy-vows-changes-will-bolster-ukraine-amid-defence-minister-uncertainty-2023-02-06/']
+        url_list = ['https://www.reuters.com/world/us/donald-trumps-business-empire-peril-civil-fraud-trial-opens-new-york-2023-10-02/']
         for url in url_list:
             yield scrapy.Request(url=url, callback=self.parse)
 
@@ -30,15 +30,15 @@ class Reuters(Spider):
 
         ## extract summary
         ## xpath selector
-        summary = response.xpath('//*[contains(@class,"paywall-article")]//*[contains(@class,"summary__summary")]//text()').extract()
+        summary = response.xpath('//*[contains(@class,"article-body__content")]//*[contains(@class,"summary__summary")]//text()').extract()
         ## css selector
-        summary = response.css('[class*="paywall-article"] [class*="summary__summary"] *::text').extract()
+        summary = response.css('[class*="article-body__content"] [class*="summary__summary"] *::text').extract()
 
         ## extract article
         ## xpath selector
-        article = response.xpath('//*[contains(@class,"paywall-article")]//*[contains(@data-testid,"paragraph")]//text()').extract()
+        article = response.xpath('//*[contains(@class,"article-body__content")]//*[contains(@data-testid,"paragraph")]//text()').extract()
         ## css selector
-        article = response.css('[class*="paywall-article"] [data-testid*="paragraph"] *::text').extract()
+        article = response.css('[class*="article-body__content"] [data-testid*="paragraph"] *::text').extract()
 
         with open('../../crawldata/'+self.name+'.jsonl', 'a', encoding='utf-8') as f:
             json.dump({"title":title,"summary": summary, "article":article,}, f)

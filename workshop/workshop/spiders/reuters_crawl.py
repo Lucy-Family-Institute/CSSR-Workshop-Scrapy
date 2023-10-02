@@ -1,6 +1,6 @@
 import scrapy
 from scrapy.spiders import CrawlSpider, Rule
-# from scrapy.crawler import CrawlerProcess
+from scrapy.crawler import CrawlerProcess
 from scrapy.linkextractors import LinkExtractor
 from bs4 import BeautifulSoup
 import os, datetime
@@ -16,8 +16,8 @@ class ReutersCrawl(CrawlSpider):
 
 
     rules = (
-        Rule(LinkExtractor(allow=('lifestyle/sports/$',)), follow=True),
-        Rule(LinkExtractor(allow=('lifestyle/sports/.+/')), callback='parse_item'),
+        Rule(LinkExtractor(allow=('sports/$',)), follow=True),
+        Rule(LinkExtractor(allow=('sports/.+/')), callback='parse_item'),
     )
 
     def parse_item(self, response):
@@ -37,15 +37,15 @@ class ReutersCrawl(CrawlSpider):
 
         ## extract summary
         ## xpath selector
-        summary = response.xpath('//*[contains(@class,"paywall-article")]//*[contains(@class,"summary__summary")]//text()').extract()
+        summary = response.xpath('//*[contains(@class,"article-body__content")]//*[contains(@class,"summary__summary")]//text()').extract()
         ## css selector
-        summary = response.css('[class*="paywall-article"] [class*="summary__summary"] *::text').extract()
+        summary = response.css('[class*="article-body__content"] [class*="summary__summary"] *::text').extract()
 
         ## extract article
         ## xpath selector
-        article = response.xpath('//*[contains(@class,"paywall-article")]//*[contains(@data-testid,"paragraph")]//text()').extract()
+        article = response.xpath('//*[contains(@class,"article-body__content")]//*[contains(@data-testid,"paragraph")]//text()').extract()
         ## css selector
-        article = response.css('[class*="paywall-article"] [data-testid*="paragraph"] *::text').extract()
+        article = response.css('[class*="article-body__content"] [data-testid*="paragraph"] *::text').extract()
 
         # item['title'] = title
         # item['comment_layer1'] = comment_layer1
@@ -62,6 +62,5 @@ class ReutersCrawl(CrawlSpider):
 #     'DOWNLOAD_DELAY': 5,
 #     'CLOSESPIDER_PAGECOUNT': 10,
 # })
-
-# process.crawl(RedditCrawl)
+# process.crawl(ReutersCrawl)
 # process.start()
