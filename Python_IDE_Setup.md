@@ -1,8 +1,8 @@
 # Python IDE
 
-This course requires you to have certain basics on Python programming, and of course, Python(3.9 or later) and Jupyter to be installed.
+This course requires the Python (3.9 or later) and Jupyter (Python IDE) to be installed.
 
-For Windows and MacOS users, it is recommended to install Anaconda, a open-platform for data science. This will set up both python and IDE all in one step.
+For Windows and MacOS users, it is recommended to install **Anaconda**, a open-platform for data science. This will set up both python and IDE all in one step.
 
 For Linux users, you probably won't need any suggestion.
 
