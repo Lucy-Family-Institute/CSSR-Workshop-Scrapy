@@ -51,4 +51,4 @@ In addition, websites listed below are out of the scope of this workshop:
 
 The workshop is planned with an 1.5 hours session. Including a brief introduction, live demos. The instructor will answer questions and help with the debug during live-coding.
 
-3:30-5pm Oct.3 CDS 246 (Hesburgh Library)
+2:30-4pm Feb.15 CDS 246 (Hesburgh Library)

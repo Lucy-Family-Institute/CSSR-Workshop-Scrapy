@@ -6,16 +6,16 @@
 import scrapy
 
 
-class Reuters(scrapy.Item):
+class GoodReads(scrapy.Item):
     # define the fields for your item here like:
 
     # Item key for post title
-    title = scrapy.Field()
+    quote = scrapy.Field()
 
     # Item key for top layer comment
-    summary = scrapy.Field()
+    AuthorTitle = scrapy.Field()
 
     # Item key for child layer comment(s)
-    article = scrapy.Field()
+    Likes = scrapy.Field()
 
     # pass

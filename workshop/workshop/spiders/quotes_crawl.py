@@ -10,24 +10,24 @@ ROOT_DIR = os.getcwd()
 
 
 class ReutersCrawl(CrawlSpider):
-    name = 'reuterscrawl'
-    allowed_domains = ['reuters.com']
-    start_urls = ['https://www.reuters.com/lifestyle/sports/']
+    name = 'goodreads'
+    allowed_domains = ['goodreads.com']
+    start_urls = ['https://www.goodreads.com/quotes/tag/classic-literature']
 
 
     rules = (
-        Rule(LinkExtractor(allow=('sports/$',)), follow=True),
-        Rule(LinkExtractor(allow=('sports/.+/')), callback='parse_item'),
+        Rule(LinkExtractor(allow=('quotes/tag/.+$',)), follow=True),
+        Rule(LinkExtractor(allow=('work/quotes/\d+$')), callback='parse_item'),
     )
 
     def parse_item(self, response):
         # self.logger.info('item page log: %s', response.url)
-        reuters_instance = ItemLoader(item=Reuters(), response=response)
+        goodreads_instance = ItemLoader(item=GoodReads(), response=response)
 
         # xpath selector
-        title = response.xpath('//h1[@data-testid="Heading"]//text()').extract()
+        title = response.xpath('//h1[@class="quoteText"]//text()').extract()
         # css selector
-        title = response.css('h1[data-testid="Heading"] *::text').extract()
+        title = response.css('h1[class="quoteText"] *::text').extract()
 
         # method 1: Extract entire text of the page
         body = BeautifulSoup(response.text, features="html.parser")

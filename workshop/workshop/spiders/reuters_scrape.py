@@ -2,6 +2,7 @@ import scrapy
 from scrapy import Spider
 from bs4 import BeautifulSoup
 import os, datetime, json
+
 ROOT_DIR = os.getcwd()
 
 class Reuters(Spider):

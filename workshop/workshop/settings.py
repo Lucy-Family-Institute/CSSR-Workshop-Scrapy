@@ -11,7 +11,7 @@ BOT_NAME = 'workshop'
 
 SPIDER_MODULES = ['workshop.spiders']
 NEWSPIDER_MODULE = 'workshop.spiders'
-CLOSESPIDER_PAGECOUNT = 7
+CLOSESPIDER_PAGECOUNT = 12
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
